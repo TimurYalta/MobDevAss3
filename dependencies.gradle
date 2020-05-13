@@ -1,0 +1,15 @@
+ext {
+
+    retrofitVersion = "2.5.0"
+    okHttpVersion = "3.14.1"
+    gsonVersion = "2.8.5"
+
+    libraries = [
+            retrofit            : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGson        : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitRx          : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            okhttp              : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            okhttpLogging       : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+            gson                : "com.google.code.gson:gson:$gsonVersion",
+    ]
+}

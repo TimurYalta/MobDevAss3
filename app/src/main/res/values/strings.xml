@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MobDevAss3</string>
+    <string name="choose_animal_type">Choose animal type</string>
+    <string name="choose_breed">Choose breed</string>
+</resources>

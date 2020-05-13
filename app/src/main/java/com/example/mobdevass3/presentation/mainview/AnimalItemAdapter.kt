@@ -1,4 +1,4 @@
-package com.example.mobdevass3.presentation.infoView
+package com.example.mobdevass3.presentation.mainview
 
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobdevass3.R
 import com.example.mobdevass3.domain.entity.Animal
-import com.example.mobdevass3.presentation.mainview.MyItemOnClickListener
 import com.example.mobdevass3.utils.downloadImage
 import com.example.mobdevass3.utils.inflate
 

@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobdevass3.R
 import com.example.mobdevass3.domain.entity.Animal
 import com.example.mobdevass3.presentation.infoView.AnimalInfoActivity
-import com.example.mobdevass3.presentation.infoView.AnimalItemAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 
@@ -105,13 +104,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        adapter = AnimalItemAdapter(arrayListOf(), object : MyItemOnClickListener {
-            override fun onClick(animal: Animal) {
-                mainVm.lastDetailedAnimal = animal.copy()
-                val intent = Intent(this@MainActivity, AnimalInfoActivity::class.java)
-                startActivity(intent)
-            }
-        })
+        adapter = AnimalItemAdapter(
+            arrayListOf(),
+            object : MyItemOnClickListener {
+                override fun onClick(animal: Animal) {
+                    mainVm.lastDetailedAnimal = animal.copy()
+                    val intent = Intent(this@MainActivity, AnimalInfoActivity::class.java)
+                    startActivity(intent)
+                }
+            })
         val lManager = LinearLayoutManager(this)
         recycler.layoutManager = lManager
         recycler.adapter = adapter
